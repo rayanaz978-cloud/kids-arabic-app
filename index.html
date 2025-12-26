@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تطبيق تعليمي للأطفال</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<h1>🌟 مرحبًا يا بطل 🌟</h1>
-<p>اضغط على الحرف لسماع نطقه</p>
 
-<div class="container">
-  <button class="card">أ</button>
-  <button class="card">ب</button>
-  <button class="card">ت</button>
-</div>
+<body>
+  <h1>🌟 مرحبا يا بطل 🌟</h1>
+  <p>اضغط على الحرف لسماع نطقه</p>
+
+  <div class="container">
+    <button class="card" onclick="playSound('alef')">أ</button>
+    <button class="card" onclick="playSound('ba')">ب</button>
+    <button class="card" onclick="playSound('ta')">ت</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
