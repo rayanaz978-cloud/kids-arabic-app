@@ -3,27 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تعلم الحروف العربية للأطفال</title>
+  <title>تعلم الحروف العربية</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <h1>🌟 تعلم الحروف العربية 🌟</h1>
+  <p>اضغط على الحرف لسماع نطقه</p>
 
-  <header>
-    <h1>📚 تعلم الحروف العربية</h1>
-    <p>اضغط على الحرف لسماع نطقه</p>
-  </header>
+  <div class="container">
 
-  <main class="container">
-    <button class="card" onclick="playSound('alef')">أ</button>
-    <button class="card" onclick="playSound('ba')">ب</button>
-    <button class="card" onclick="playSound('ta')">ت</button>
-    <button class="card" onclick="playSound('jim')">ج</button>
-  </main>
+    <div class="card" onclick="playSound('alef')">
+      <img src="assets/images/alef.png" alt="أ">
+      <span>أ</span>
+    </div>
 
-  <footer>
-    <p>🌟 تطبيق تعليمي للأطفال</p>
-  </footer>
+    <div class="card" onclick="playSound('ba')">
+      <img src="assets/images/ba.png" alt="ب">
+      <span>ب</span>
+    </div>
+
+    <div class="card" onclick="playSound('ta')">
+      <img src="assets/images/ta.png" alt="ت">
+      <span>ت</span>
+    </div>
+
+    <div class="card" onclick="playSound('jim')">
+      <img src="assets/images/jim.png" alt="ج">
+      <span>ج</span>
+    </div>
+
+  </div>
 
   <script src="script.js"></script>
 </body>
