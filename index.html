@@ -2,44 +2,52 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
+  <title>تطبيق تعليمي للأطفال</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تعلم الحروف العربية</title>
-
-  <!-- خط عربي جميل -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h1>📚 تعلم الحروف العربية</h1>
-  <p class="subtitle">اضغط على الحرف لسماع نطقه</p>
-
-  <div class="container">
-
-    <div class="card" onclick="playSound('alef')">
-      <img src="assets/images/alef.png" alt="أ">
-      <span>أ</span>
+  <!-- شاشة الدعاء -->
+  <div id="splash">
+    <div class="dua-box">
+      <p>
+        ﴿ اللّهُمّ احفَظ رَيّان الفَتني،<br>
+        واجعَله في حِفظك وأمانك،<br>
+        ووفِّقه لكلِّ خير 🤍 ﴾
+      </p>
     </div>
+  </div>
 
-    <div class="card" onclick="playSound('ba')">
-      <img src="assets/images/ba.png" alt="ب">
-      <span>ب</span>
+  <!-- التطبيق -->
+  <div id="app" class="hidden">
+    <h1>🌟 مرحبًا يا بطل 🌟</h1>
+    <p>اضغط على الحرف لسماع نطقه</p>
+
+    <div class="container">
+      <button class="card" onclick="playSound('alef')">
+        <img src="assets/images/alef.png">
+        <span>أ</span>
+      </button>
+
+      <button class="card" onclick="playSound('ba')">
+        <img src="assets/images/ba.png">
+        <span>ب</span>
+      </button>
+
+      <button class="card" onclick="playSound('ta')">
+        <img src="assets/images/ta.png">
+        <span>ت</span>
+      </button>
+
+      <button class="card" onclick="playSound('jim')">
+        <img src="assets/images/jim.png">
+        <span>ج</span>
+      </button>
     </div>
-
-    <div class="card" onclick="playSound('ta')">
-      <img src="assets/images/ta.png" alt="ت">
-      <span>ت</span>
-    </div>
-
-    <div class="card" onclick="playSound('jim')">
-      <img src="assets/images/jim.png" alt="ج">
-      <span>ج</span>
-    </div>
-
   </div>
 
   <script src="script.js"></script>
 </body>
-</html>
+  </html>
